@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: auto;
+  padding: auto;
+  height: auto;
+  width: auto;
+   scroll-behavior: smooth;
+}
+body{
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+
+}
+.section01 {
+  position: absolute;
+  top:auto;
+  left:auto;
+  right:0%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section01 h1 {
+  position: absolute;
+  bottom:0%;
+  left: 32%;
+  color: white;
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Cookie";
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+  opacity: 0.7;
+  text-shadow: 0px 0px 10px black,
+               0px 0px 20px #ff4d00,
+               0px 0px 40px #ff4d00,
+               0px 0px 60px black,
+               0px 0px 100px red,
+               0px 0px 200px red;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate{
+  50%,50%{
+    color: white;
+  }
+ 50%,50%{
+    color: #ff4d00;
+    filter: blur(.2px);
+  }
+}
+.video-container {
+  position: absolute;
+  top: 30%;
+  left: 18%;
+  width: 100%;
+  height: 100%;
+}
+
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+.all{   
+        margin: 0;
+        padding: 0;
+        position:absolute;
+        list-style-type: none;
+        top: 8.5%;
+        right: 4.5%;
+        display: flex;
+        justify-content: center;
+        min-height: 6.5vh;
+        font-family:Gill Sans Extrabold, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        
+}
+.menu a{
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-decoration: none;
+        border-radius: 50px 20px;
+        
+        overflow: hidden;
+        transition: 0.65s; 
+}
+
+.menu a:hover{
+       color: black;
+        background: red;
+        box-shadow: 0 0 10px black,
+                    0 0 20px #ff4d00,
+                    0 0 40px red;
+        transition-delay: 1s;
+}
+.menu a span{
+        position: absolute;
+        display: block;
+    }
+.menu a span:nth-child(1){
+        top:0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg,transparent,red);
+    }
+.menu a:hover span:nth-child(1){
+        
+        transition: 2s;
+        left: 100%;
+        transition-delay: 0.15s;
+    }
+.menu a span:nth-child(2){
+       bottom:0;
+        left: 100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg,transparent,red);}
+
+.menu a:hover span:nth-child(2){
+        left: -100%;
+        transition: 2s;
+        transition-delay: 0.30s;
+    }
+.menu1 a{
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-decoration: none;
+        border-radius: 50px 20px;
+        
+        overflow: hidden;
+        transition: 0.65s; 
+}
+
+.menu1 a:hover{
+       color: black;
+        background: #810bb8;
+        box-shadow: 0 0 10px black,
+                    0 0 20px #9022a3,
+                    0 0 40px #810bb8;
+        transition-delay: 1s;
+}
+.menu1 a span{
+        position: absolute;
+        display: block;
+    }
+.menu1 a span:nth-child(1){
+        top:0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg,transparent,#9022a3);
+    }
+.menu1 a:hover span:nth-child(1){
+        
+        transition: 2s;
+        left: 100%;
+        transition-delay: 0.15s;
+    }
+.menu1 a span:nth-child(2){
+       bottom:0;
+        left: 100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg,transparent,#810bb8);}
+
+.menu1 a:hover span:nth-child(2){
+        left: -100%;
+        transition: 2s;
+        transition-delay: 0.30s;
+    }
+
+
+#sidebar{
+    width: 14em;
+    height: auto;
+    margin: 4em auto 0;
+    font-size: 1.2em;
+    line-height: 2em;
+    color:#fff;
+    font-weight: 700;
+    position: absolute;
+    top:auto;
+    bottom:40%;
+    right:-10em;
+}
+
+#sidebar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar ul li{
+    display: block;
+    background-color: #333;
+    height: 2em;
+    padding: 1em 1.5em;
+    position: relative;
+    transition: transform .5s;
+}
+
+
+#sidebar ul li:nth-child(1){
+    background-color:transparent;
+     border-radius: 90px 2px;
+}
+
+#sidebar ul li:nth-child(2){
+    background-color: transparent;
+     border-radius: 1500px 2px;
+}
+
+#sidebar ul li:hover{
+    transform: translateX(-10em);
+    box-shadow: 0 0 10px black,0 0 20px #ff4d00, 0 0 40px red;
+    background: linear-gradient(360deg,transparent,red);
+}
+
+
+
+#sidebar ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+#sidebar ul li a h1{
+    position: absolute;
+    left: 30%;
+}
+
+
+#sidebar ul li span{
+    display: block;
+    position: absolute;
+    top:;
+    bottom:0;
+    font-size: 1em;
+    margin:0 auto;
+    line-height:2em;
+    padding:1em 1.5em;
+    left:0.167em;
+}
+/*fire wok*/
+section
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.fireworks
+{
+  position: fixed;
+}
+
+
+#socside{
+    width: 14em;
+    height: auto;
+    margin: 4em auto 0;
+    font-size: 1.2em;
+    line-height: 2em;
+    
+    font-weight: 700;
+    text-transform:uppercase;
+    position: absolute;
+    top:auto 5em;
+    bottom: 20%;
+    left:-10em;
+}
+
+#socside ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#socside ul li{
+    display: block;
+    background-color: #333;
+    height: 2em;
+    padding: 1em 1.5em;
+    position: relative;
+    transition: transform .5s;
+}
+
+
+#socside ul li:nth-child(1){
+    background-color: transparent;
+     border-radius: 90px 2px;
+     }
+
+#socside ul li:nth-child(2){
+    background-color: transparent;
+     border-radius: 90px 2px;/*#E2403D*/
+}
+
+#socside ul li:nth-child(3){
+    background-color: transparent;
+     border-radius: 90px 2px;/*#E2403D*/
+}
+
+#socside ul li:nth-child(4){
+    background-color: transparent;
+     border-radius: 90px 2px;/*#8F5950*/
+}
+
+#socside ul li:nth-child(5){
+    background-color: transparent;
+     border-radius: 90px 2px;/*#007BB3*/
+}
+
+#socside ul li:nth-child(6){
+    background-color: transparent;
+     border-radius: 90px 2px;/*#22CCEF*/
+}
+
+
+#socside ul li:nth-child(1):hover{
+    transform: translateX(10em);
+    box-shadow: 0 0 10px black,0 0 20px #607FB0, 0 0 40px #607FB0;
+    background: linear-gradient(360deg,transparent,#607FB0);
+}
+#socside ul li:nth-child(2):hover{
+    transform: translateX(10em);
+    box-shadow: 0 0 10px black,0 0 20px #ff4d00, 0 0 40px #E2403D;
+    background: linear-gradient(360deg,transparent,#E2403D);
+}
+#socside ul li:nth-child(3):hover{
+    transform: translateX(10em);
+    box-shadow: 0 0 10px black,0 0 20px #53C3E5, 0 0 40px #53C3E5;
+    background: linear-gradient(360deg,transparent,#53C3E5);
+}
+#socside ul li:nth-child(4):hover{
+    transform: translateX(10em);
+    box-shadow: 0 0 10px black,0 0 20px #ff4d00, 0 0 40px red;
+    background: linear-gradient(360deg,transparent,red);
+}
+#socside ul li:nth-child(5):hover{
+    transform: translateX(10em);
+    box-shadow: 0 0 10px black,0 0 20px #007BB3, 0 0 40px #007BB3;
+    background: linear-gradient(360deg,transparent,#007BB3);
+}
+#socside ul li:nth-child(6):hover{
+    transform: translateX(10em);
+    box-shadow: 0 0 10px black,0 0 20px #22CCEf, 0 0 40px #22CCEf;
+    background: linear-gradient(360deg,transparent,#22CCEF);
+}
+
+#socside ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#socside ul li span{
+    display: block;
+    position: absolute;
+    top:0;
+    bottom:0;
+    font-size: 1em;
+    margin:0 auto;
+    line-height:2em;
+    padding:1em 1.5em;
+    right:0.167em;
+}
